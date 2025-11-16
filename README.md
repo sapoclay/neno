@@ -1,8 +1,8 @@
-# 🖥️ Asistente de Escritorio
+# Asistente de escritorio Nen@
 
 Un asistente personal diseñado para ayudarte a gestionar tus recordatorios de forma sencilla con notificaciones por voz.
 
-## ✨ Características
+## Características
 
 - ✅ **Recordatorios con fecha y hora** (formato español: DD/MM/YYYY HH:MM)
 - ✅ **Recordatorios diarios repetitivos**
@@ -15,7 +15,7 @@ Un asistente personal diseñado para ayudarte a gestionar tus recordatorios de f
 - ✅ **Configuración independiente por usuario** (voz, recordatorios, historial)
 - ✅ **Icono y logo personalizables**
 
-## 🚀 Instalación y Ejecución
+## Instalación y Ejecución
 
 ### Requisitos previos
 ```bash
@@ -33,9 +33,9 @@ El script `run_app.py`:
 2. Instala todas las dependencias necesarias
 3. Inicia la aplicación
 
-## 📅 Uso del Asistente
+## Uso del asistente
 
-### Formato de Fecha y Hora
+### Formato de fecha y hora
 
 El asistente utiliza **formato español**:
 
@@ -45,15 +45,15 @@ El asistente utiliza **formato español**:
 - **Solo hora**: `HH:MM` (asume hoy o mañana si la hora ya pasó)
   - Ejemplo: `14:30`
 
-### Acceder al Asistente
+### Acceder al asistente
 
-#### Opción 1: Icono en la bandeja del sistema
+#### Opción 1: icono en la bandeja del sistema
 Busca el icono en tu bandeja del sistema y haz **clic derecho** para ver el menú:
-- 📋 **Abrir Asistente** - Gestionar recordatorios
-- ⚙️ **Configurar Voz** - Cambiar motor de voz
+- 📋 **Abrir asistente** - Gestionar recordatorios
+- ⚙️ **Configurar voz** - Cambiar motor de voz
 - ℹ️ **Acerca de** - Información del programa
-- ➕ **Añadir Recordatorio de Prueba** - Prueba rápida
-- 🔊 **Probar Voz** - Escuchar la voz actual
+- ➕ **Añadir recordatorio de prueba** - Prueba rápida
+- 🔊 **Probar voz** - Escuchar la voz actual
 - ❌ **Salir** - Cerrar la aplicación
 
 #### Opción 2: Desde la terminal
@@ -62,9 +62,9 @@ Busca el icono en tu bandeja del sistema y haz **clic derecho** para ver el men�
 Ctrl+C
 ```
 
-### Configurar la Voz
+### Configurar la voz
 
-1. Haz clic en **"⚙️ Configurar Voz"** (en la interfaz o menú del icono)
+1. Haz clic en **"⚙️ Configurar voz"** (en la interfaz o menú del icono)
 2. Elige entre:
    - **Google TTS (gTTS)**: Voz natural y clara (requiere internet)
    - **pyttsx3**: Voz offline (robótica, sin internet)
@@ -72,30 +72,30 @@ Ctrl+C
 4. Haz clic en **"🔊 Probar Voz"** para escuchar
 5. Guarda la configuración
 
-### Historial de Conversaciones
+### Historial de conversaciones
 
 - Cada usuario tiene su propio historial en `config/users/<usuario>/conversation_history.json`.
 - El avatar carga automáticamente los mensajes recientes al abrirse.
 - Usa el botón **"Borrar historial"** en la ventana principal del avatar para eliminar todas las conversaciones (pide confirmación y no se puede deshacer).
 - También puedes editar el archivo JSON manualmente si necesitas depurar o migrar información.
 
-## 🎨 Personalización
+## Personalización
 
-### Cambiar el Icono de la Bandeja
+### Cambiar el icono de la bandeja
 
 1. Guarda tu icono como `assets/icon.png`
 2. **Tamaño recomendado**: 64x64 o 128x128 píxeles
 3. **Formato**: PNG (con transparencia recomendado)
 4. Reinicia la aplicación
 
-### Cambiar el Logo (ventana "Acerca de")
+### Cambiar el logo (ventana "Acerca de")
 
 1. Guarda tu logo como `assets/logo.png`
 2. **Tamaño recomendado**: 256x256 píxeles
 3. **Formato**: PNG (con transparencia recomendado)
 4. Reinicia la aplicación
 
-## 📁 Estructura del Proyecto
+## Estructura del proyecto
 
 ```
 Asistente/
@@ -122,7 +122,7 @@ Asistente/
       └── conversation_history.json  # Conversaciones guardadas por usuario
 ```
 
-## 🔧 Configuración Avanzada
+## 🔧 Configuración avanzada
 
 ### Archivo `config/users/<usuario>/settings.json`
 
@@ -189,7 +189,7 @@ El asistente guarda los últimos 200 mensajes intercambiados con cada usuario en
 - Se actualiza automáticamente cada vez que escribes o el asistente responde.
 - Puedes vaciarlo desde el botón **"Borrar historial"** del avatar o eliminar el contenido manualmente.
 
-## 🐛 Solución de Problemas
+## Solución de problemas
 
 ### Error: "portaudio.h: No existe el archivo"
 ```bash
@@ -209,7 +209,7 @@ sudo apt-get install -y portaudio19-dev python3-pyaudio
 - Usa la opción **"❌ Salir"** del menú del icono
 - O ejecuta: `pkill -f "python.*main.py"`
 
-## 📝 Ejemplos de Uso
+## Ejemplos de uso
 
 ### Recordatorio único
 - **Mensaje**: "Reunión con el equipo"
@@ -221,12 +221,12 @@ sudo apt-get install -y portaudio19-dev python3-pyaudio
 - **Fecha/Hora**: `08:00`
 - **Repetir**: ✓ Repetir diariamente
 
-## 🌐 Enlaces
+## Enlaces
 
 - **GitHub**: https://github.com/sapoclay/neno
 - **Documentación**: Ver archivo README.md
 
-## 📜 Licencia
+## Licencia
 
 Este proyecto es de código abierto y completamente gratuito.
 
