@@ -167,6 +167,15 @@ def launch_gui():
     file_menu.add_command(label="Salir", command=exit_program)
 
     root.protocol("WM_DELETE_WINDOW", exit_program)
+
+    def _auto_show_avatar():
+        try:
+            show_avatar_window()
+        except Exception as exc:
+            print(f"No se pudo abrir el avatar automáticamente: {exc}")
+
+    # Mostrar el avatar tan pronto como la UI esté lista para que sea la primera ventana visible
+    root.after(100, _auto_show_avatar)
     
     # Menú Preferencias
     preferences_menu = tk.Menu(menubar, tearoff=0)
