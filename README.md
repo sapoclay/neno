@@ -230,10 +230,3 @@ sudo apt-get install -y portaudio19-dev python3-pyaudio
 
 Este proyecto es de código abierto y completamente gratuito.
 
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si encuentras algún error o tienes sugerencias, no dudes en abrir un issue o pull request.
-
----
-
-**¡Disfruta de tu Asistente de Escritorio!** 🎉
