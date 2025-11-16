@@ -1,0 +1,11 @@
+{
+  "voice_engine": "gtts",
+  "voice_id": "roa/es",
+  "voice_rate": 150,
+  "voice_volume": 1.0,
+  "voice_gender": "male",
+  "search_engine": "google",
+  "theme": "light",
+  "mic_device_index": null,
+  "gemini_api_key": ""
+}
